@@ -77,9 +77,9 @@ html {
     background-color: hsl(228, 56%, 26%);
     border-radius: 15px;
     height: 6em;
-    width: 30em;
+    width: 40em;
     margin-left: 30px;
-    padding: 35px;
+    padding: 60px 35px 100px 35px;
     color: hsl(243, 100%, 93%);
 }
 
