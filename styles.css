@@ -85,6 +85,10 @@ html {
 .resumen{
     width: 100%;
 }
+.almacenamiento-espaciado{
+    display: flex;
+    justify-content: space-between;
+}
 
 @media(max-width:375px) {
     body {
