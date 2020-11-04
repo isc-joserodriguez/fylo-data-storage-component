@@ -106,6 +106,14 @@ html {
     box-sizing: border-box;
 }
 
+.ocultar {
+    display: none;
+}
+
+.progress:hover+.ocultar {
+    display: block;
+}
+
 .globo {
     position: absolute;
     width: auto;
