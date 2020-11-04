@@ -21,16 +21,15 @@ html {
 
 .opciones {
     background-color: hsl(228, 56%, 26%);
-    border-radius: 20px 100px 20px 20px;
-    padding: 40px 150px 40px 80px;
-    width: 250px;
+    border-radius: 15px 90px 15px 15px;
+    padding: 40px 120px 40px 50px;
 }
 
 .div-iconos {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 30px;
+    justify-content: left;
+    margin-top: 10px;
 }
 
 .iconos {
@@ -42,6 +41,15 @@ html {
     width: 55px;
     margin: 5px;
     border-radius: 10px;
+}
+
+.almacenamiento {
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 15px;
+    height: 5em;
+    margin-left: 30px;
+    padding: 15px;
+    color: hsl(243, 100%, 93%);
 }
 
 @media(max-width:375px) {
