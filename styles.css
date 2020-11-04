@@ -37,8 +37,8 @@ html {
     align-items: center;
     justify-content: center;
     background-color: hsl(229, 57%, 11%);
-    height: 55px;
-    width: 55px;
+    height: 3em;
+    width: 3em;
     margin: 5px;
     border-radius: 10px;
 }
@@ -83,17 +83,77 @@ html {
     color: hsl(243, 100%, 93%);
 }
 
-.resumen{
+.resumen {
     width: 100%;
 }
-.almacenamiento-espaciado{
+
+.almacenamiento-espaciado {
     display: flex;
     justify-content: space-between;
+}
+
+.vineta {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 100vh;
+    max-height: 600px;
+    /*Opcionalmente con box-shadow, creamos varias sombras, para simular un marco*/
+    box-shadow: 0 0 0 1px black, 0 0 0 6px white, 0 0 0 7px black;
+}
+
+*, *::before {
+    box-sizing: border-box;
+}
+
+.globo {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 166px;
+    left: 64%;
+    padding: 1.5em;
+    border-radius: 2em;
+    z-index: 1;
+    background-color: hsl(243, 100%, 93%);
+    color: black;
+}
+
+.globo::before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 103px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top-color: hsl(243, 100%, 93%);
+    border-bottom: 0;
+    border-right: 0;
+    margin-left: -18px;
+    margin-bottom: -20px;
 }
 
 @media(max-width:375px) {
     body {
         background-image: url('./images/bg-mobile.png');
+    }
+}
+
+@media(max-width:745px) {
+    .flex {
+        flex-direction: column;
+    }
+    .almacenamiento {
+        margin-top: 20px;
+        width: 80%;
+    }
+    .opciones {
+        width: 80%;
+    }
+    .globo {
+        top: 270px;
+        left: 50%;
     }
 }
 
