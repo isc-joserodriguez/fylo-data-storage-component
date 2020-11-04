@@ -1,6 +1,8 @@
-html{
+html {
     font-family: 'Raleway', sans-serif;
+    color: hsl(229, 7%, 55%);
 }
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -9,3 +11,56 @@ html{
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 31em;
+}
+
+.opciones {
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 20px 100px 20px 20px;
+    padding: 40px 150px 40px 80px;
+    width: 250px;
+}
+
+.div-iconos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.iconos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(229, 57%, 11%);
+    height: 55px;
+    width: 55px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+@media(max-width:375px) {
+    body {
+        background-image: url('./images/bg-mobile.png');
+    }
+}
+
+@media(min-width:376px) {
+    body {
+        background-color: hsl(229, 57%, 11%);
+        background-image: url('./images/bg-desktop.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-attachment: fixed;
+    }
+}
+
+/* 
+progress bar
+linear-gradient(to right,hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+ */
